@@ -1,0 +1,35 @@
+package test2;
+
+import java.util.Scanner;
+
+public class Test04 {
+
+	public static void main(String[] args) {
+		int arr[] = {4,2,1,5,3};
+		
+		for (int i=0; i<4; i++) {
+			for (int j=i+1; j<5; j++) {
+				
+				if(arr[i] > arr[j]) {
+					int temp = arr[j];
+					arr[j] = arr[i];
+					arr[i] = temp;
+					System.out.print(i + "번째 숫자 기준 " + j + " 번째 변경 : ");
+					
+					for (int n : arr) {
+						System.out.print(n + " ");
+					}
+				}
+				System.out.println();
+			}
+			
+			
+			System.out.print((i+1) + "라운드 : ");
+			for (int n : arr) {
+				System.out.print(n + " ");
+			}
+			System.out.println();
+		}
+	}
+
+}
