@@ -6,6 +6,11 @@ package sub8;
  * 내용 : 5장 자바 인터페이스 실습
  * */
 
+interface Person {
+	public void hello();
+	public void info();
+}
+
 public class InterfaceTest {
 
 	public static void main(String[] args) {
@@ -38,6 +43,25 @@ public class InterfaceTest {
 		stv.surf();
 		stv.process();
 		stv.save();
+		
+		// 인터페이스 활용4 : 익명 객체 사용
+		Person kim = new Person() {
+			
+			@Override
+			public void info() {
+				System.out.println("김유신입니다");
+				
+			}
+			
+			@Override
+			public void hello() {
+				System.out.println("안녕하세여");
+				
+			}
+		};
+		
+		kim.hello();
+		kim.info();
 		
 	}
 
