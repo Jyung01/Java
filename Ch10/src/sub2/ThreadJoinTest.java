@@ -1,0 +1,29 @@
+package sub2;
+
+/*
+ * 날짜 : 2026/05/14
+ * 이름 : 양지웅
+ * 내용 : 10장 자바 스레드(Thread) Join 실습
+ * */
+
+
+public class ThreadJoinTest {
+
+	public static void main(String[] args) {
+		ChildThread ct = new ChildThread();
+		ct.setName("Child");
+		
+		ct.start();
+		
+		try {
+			// 자식 스레드가 작업을 마치고 Main Thread로 합류할 때까지 Main 스레드 대기
+			ct.join();
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		System.out.println("Main Thread 종료");
+	}
+
+}
