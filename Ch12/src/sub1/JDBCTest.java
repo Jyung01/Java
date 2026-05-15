@@ -7,7 +7,7 @@ import java.sql.SQLException;
 /*
  * 날짜 : 2026/05/15
  * 이름 : 양지웅
- * 내용 : 12장 JDBC
+ * 내용 : 12장 JDBC 실습
  * */
 
 public class JDBCTest {
@@ -20,7 +20,7 @@ public class JDBCTest {
 		String pass = "1234";
 		
 		try {
-			// 1) 드라이버 로드
+			// 1) 드라이버 로드 (생략 가능)
 			Class.forName("com.mysql.cj.jdbc.Driver");
 			
 			// 2) DB 접속
