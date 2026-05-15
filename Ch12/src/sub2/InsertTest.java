@@ -27,7 +27,7 @@ public class InsertTest {
 			
 			// 3) SQL 실행
 			String sql = "INSERT INTO user1 VALUES ('J103', '장보고', '010-1211-1003', 26)";
-			stmt.executeUpdate(sql);
+			stmt.executeUpdate(sql);	//  Insert, Update, Delete 쿼리만 사용
 			
 			// 4) SQL 결과 처리 (SELECT 작업일 경우)
 			// 5) DB 연결해제

@@ -27,7 +27,7 @@ public class UpdateTest {
 			
 			// 3) SQL 실행
 			String sql = "UPDATE user1 SET name = 'j102', hp='010-1222-1022', age='22' WHERE userid ='j102'";
-			stmt.executeUpdate(sql);
+			stmt.executeUpdate(sql);	//  Insert, Update, Delete 쿼리만 사용
 			
 			// 4) SQL 결과 처리 (SELECT 작업일 경우)
 			// 5) DB 연결해제
